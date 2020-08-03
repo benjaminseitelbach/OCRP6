@@ -6,8 +6,11 @@ public class DataBaseConfig {
 	 public Connection getConnection() throws ClassNotFoundException, SQLException {
 	        
 	        Class.forName("com.mysql.cj.jdbc.Driver");
-
+	        /*
 	        return DriverManager.getConnection("jdbc:mysql://localhost:3306/paymybuddy?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC",
+	        		"root", "rootroot");
+	        		*/
+	        return DriverManager.getConnection("jdbc:mysql://localhost:3306/prod?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC",
 	        		"root", "rootroot");
 	    }
 

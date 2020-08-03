@@ -11,8 +11,8 @@ import com.paymybuddy.paymybuddy.constants.DBConstants;
 import com.paymybuddy.paymybuddy.model.Transaction;
 import com.paymybuddy.paymybuddy.model.User;
 
-public class ConnectionDaoImpl implements ConnectionDao {
-public DataBaseConfig dataBaseConfig = new DataBaseConfig();
+public class ConnectionDaoImpl  {
+	public DataBaseConfig dataBaseConfig = new DataBaseConfig();
 	
 	public boolean saveConnection(int userId, int connectionId) {
 		Connection con = null;

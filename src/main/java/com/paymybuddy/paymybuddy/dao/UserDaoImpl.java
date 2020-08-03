@@ -10,8 +10,7 @@ import com.paymybuddy.paymybuddy.config.DataBaseConfig;
 import com.paymybuddy.paymybuddy.constants.DBConstants;
 import com.paymybuddy.paymybuddy.model.User;
 
-@Repository
-public class UserDaoImpl implements UserDao {
+public class UserDaoImpl {
 
 	public DataBaseConfig dataBaseConfig = new DataBaseConfig();
 

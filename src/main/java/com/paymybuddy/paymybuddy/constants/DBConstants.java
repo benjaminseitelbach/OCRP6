@@ -11,4 +11,5 @@ public class DBConstants {
 	public static final String GET_TRANSACTION = "select AMOUNT, DESCRIPTION, RECEIVER from transaction where id = ?";
 	public static final String GET_RECEIVED_TRANSACTIONS_IDS = "select ID from transaction where receiver = ?";
 	public static final String GET_USERID_USERTRANSACTION = "select user_ID from user_transaction where transaction_ID = ?";
+	public static final String GET_USER = "select * from user where user_ID = ?";
 }

@@ -13,6 +13,9 @@ import com.paymybuddy.paymybuddy.service.UsersService;
 public class PaymybuddyApplication {
 
 	public static void main(String[] args) {
+		User user = new User("jforet@gmail.com", "pwd");
+		UserDao userDao = new UserDao();
+		userDao.create(user);
 		/*
 		UsersService usersService = new UsersService();
 		TransactionsService transactionsService = new TransactionsService();
